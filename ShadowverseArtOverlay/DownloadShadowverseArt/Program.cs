@@ -12,10 +12,10 @@ namespace DownloadShadowverseArt
         static void Main(string[] args)
         {
             var language = ConfigurationSettings.AppSettings["language"] ?? "en";
-            var totalCardsString = ConfigurationSettings.AppSettings["totalCards"] ?? "623";
+            var totalCardsString = ConfigurationSettings.AppSettings["totalCards"] ?? "680";
 
 
-            string url = $"https://shadowverse-portal.com/cards?m=index&lang={language}&m=index&card_offset=";
+            string url = $"https://shadowverse-portal.com/cards?m=index&lang={language}&m=index&include_token=1&card_offset=";
 
 
 

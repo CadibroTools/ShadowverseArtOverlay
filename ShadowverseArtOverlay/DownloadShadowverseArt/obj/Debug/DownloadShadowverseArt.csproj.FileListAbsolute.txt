@@ -8,3 +8,9 @@ D:\Projects\ShadowverseArt\DownloadShadowverseArt\bin\Debug\DownloadShadowverseA
 D:\Projects\ShadowverseArt\DownloadShadowverseArt\bin\Debug\DownloadShadowverseArt.pdb
 D:\Projects\ShadowverseArt\DownloadShadowverseArt\obj\Debug\DownloadShadowverseArt.exe
 D:\Projects\ShadowverseArt\DownloadShadowverseArt\obj\Debug\DownloadShadowverseArt.pdb
+D:\Projects\ShadowverseArtOverlay\DownloadShadowverseArt\bin\Debug\DownloadShadowverseArt.exe.config
+D:\Projects\ShadowverseArtOverlay\DownloadShadowverseArt\bin\Debug\DownloadShadowverseArt.exe
+D:\Projects\ShadowverseArtOverlay\DownloadShadowverseArt\bin\Debug\DownloadShadowverseArt.pdb
+D:\Projects\ShadowverseArtOverlay\DownloadShadowverseArt\obj\Debug\DownloadShadowverseArt.csprojResolveAssemblyReference.cache
+D:\Projects\ShadowverseArtOverlay\DownloadShadowverseArt\obj\Debug\DownloadShadowverseArt.exe
+D:\Projects\ShadowverseArtOverlay\DownloadShadowverseArt\obj\Debug\DownloadShadowverseArt.pdb
