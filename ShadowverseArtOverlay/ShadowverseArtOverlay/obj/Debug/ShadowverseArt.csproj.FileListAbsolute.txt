@@ -1,0 +1,10 @@
+D:\Projects\ShadowverseArt\ShadowverseArt\bin\Debug\ShadowverseArt.exe.config
+D:\Projects\ShadowverseArt\ShadowverseArt\bin\Debug\ShadowverseArt.exe
+D:\Projects\ShadowverseArt\ShadowverseArt\bin\Debug\ShadowverseArt.pdb
+D:\Projects\ShadowverseArt\ShadowverseArt\obj\Debug\ShadowverseArt.csprojResolveAssemblyReference.cache
+D:\Projects\ShadowverseArt\ShadowverseArt\obj\Debug\ShadowverseArt.Properties.Resources.resources
+D:\Projects\ShadowverseArt\ShadowverseArt\obj\Debug\ShadowverseArt.csproj.GenerateResource.Cache
+D:\Projects\ShadowverseArt\ShadowverseArt\obj\Debug\ShadowverseArt.exe
+D:\Projects\ShadowverseArt\ShadowverseArt\obj\Debug\ShadowverseArt.pdb
+D:\Projects\ShadowverseArt\ShadowverseArt\bin\Debug\SlimDX.dll
+D:\Projects\ShadowverseArt\ShadowverseArt\obj\Debug\ShadowverseArt.Settings.resources

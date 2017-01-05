@@ -1,0 +1,6 @@
+D:\Projects\ShadowverseScraper\ShadowverseScraper\bin\Debug\ShadowverseScraper.exe.config
+D:\Projects\ShadowverseScraper\ShadowverseScraper\bin\Debug\ShadowverseScraper.exe
+D:\Projects\ShadowverseScraper\ShadowverseScraper\bin\Debug\ShadowverseScraper.pdb
+D:\Projects\ShadowverseScraper\ShadowverseScraper\obj\Debug\ShadowverseScraper.exe
+D:\Projects\ShadowverseScraper\ShadowverseScraper\obj\Debug\ShadowverseScraper.pdb
+D:\Projects\ShadowverseScraper\ShadowverseScraper\bin\Debug\DownloadShadowverseArt.exe.config

@@ -1,0 +1,10 @@
+D:\Projects\ShadowverseScraper\ShadowverseScraper\bin\Debug\DownloadShadowverseArt.exe.config
+D:\Projects\ShadowverseScraper\ShadowverseScraper\bin\Debug\DownloadShadowverseArt.exe
+D:\Projects\ShadowverseScraper\ShadowverseScraper\bin\Debug\DownloadShadowverseArt.pdb
+D:\Projects\ShadowverseScraper\ShadowverseScraper\obj\Debug\DownloadShadowverseArt.exe
+D:\Projects\ShadowverseScraper\ShadowverseScraper\obj\Debug\DownloadShadowverseArt.pdb
+D:\Projects\ShadowverseArt\DownloadShadowverseArt\bin\Debug\DownloadShadowverseArt.exe.config
+D:\Projects\ShadowverseArt\DownloadShadowverseArt\bin\Debug\DownloadShadowverseArt.exe
+D:\Projects\ShadowverseArt\DownloadShadowverseArt\bin\Debug\DownloadShadowverseArt.pdb
+D:\Projects\ShadowverseArt\DownloadShadowverseArt\obj\Debug\DownloadShadowverseArt.exe
+D:\Projects\ShadowverseArt\DownloadShadowverseArt\obj\Debug\DownloadShadowverseArt.pdb

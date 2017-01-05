@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowverseArtOverlay", "ShadowverseArtOverlay\ShadowverseArtOverlay.csproj", "{896AE751-BA91-4A5F-A897-67E792C56301}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownloadShadowverseArt", "DownloadShadowverseArt\DownloadShadowverseArt.csproj", "{BA0F1455-4CF2-40E9-AF3E-3866EC5E4F18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{896AE751-BA91-4A5F-A897-67E792C56301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896AE751-BA91-4A5F-A897-67E792C56301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896AE751-BA91-4A5F-A897-67E792C56301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896AE751-BA91-4A5F-A897-67E792C56301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA0F1455-4CF2-40E9-AF3E-3866EC5E4F18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA0F1455-4CF2-40E9-AF3E-3866EC5E4F18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA0F1455-4CF2-40E9-AF3E-3866EC5E4F18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA0F1455-4CF2-40E9-AF3E-3866EC5E4F18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
