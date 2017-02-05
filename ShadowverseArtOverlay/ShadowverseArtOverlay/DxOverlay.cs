@@ -186,6 +186,8 @@ namespace ShadowverseArtOverlay
                         }
 
                     }
+
+                    Thread.Sleep(50);
                 }
                 catch (Exception ex)
                 {
