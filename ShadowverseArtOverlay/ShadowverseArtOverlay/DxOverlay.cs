@@ -7,6 +7,8 @@ using System.Threading;
 using System.Windows.Forms;
 using SlimDX;
 using D3D = SlimDX.Direct3D9;
+using System.Diagnostics;
+using ShadowverseArtOverlay.Framework;
 
 namespace ShadowverseArtOverlay
 {
@@ -89,22 +91,29 @@ namespace ShadowverseArtOverlay
 
         private D3D.Texture GetEvolvedTexture(string textureName)
         {
-            textureName += "_Evolved";
-            if (_textureCache.ContainsKey(textureName))
-                return _textureCache[textureName];
-
-            var filePath = Path.GetFullPath("Art/" + textureName + ".png");
-
-            if (filePath != string.Empty)
+            try
             {
-                D3D.ImageInformation info;
-                D3D.PaletteEntry[] palette;
-                var texture = D3D.Texture.FromFile(_device, filePath,
-                    536, 698, 0, D3D.Usage.None, D3D.Format.A8B8G8R8, D3D.Pool.Default, D3D.Filter.Default,
-                    D3D.Filter.Default, 0, out info, out palette);
+                textureName += "_Evolved";
+                if (_textureCache.ContainsKey(textureName))
+                    return _textureCache[textureName];
 
-                _textureCache[textureName] = texture;
-                return texture;
+                var filePath = Path.GetFullPath("Art/" + textureName + ".png");
+
+                if (filePath != string.Empty)
+                {
+                    D3D.ImageInformation info;
+                    D3D.PaletteEntry[] palette;
+                    var texture = D3D.Texture.FromFile(_device, filePath,
+                        536, 698, 0, D3D.Usage.None, D3D.Format.A8B8G8R8, D3D.Pool.Default, D3D.Filter.Default,
+                        D3D.Filter.Default, 0, out info, out palette);
+
+                    _textureCache[textureName] = texture;
+                    return texture;
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
             }
 
             return null;
@@ -142,11 +151,16 @@ namespace ShadowverseArtOverlay
 
                     if (_hudToggled)
                     {
-                        if (ShadowverseProcessReader.IsCardSelected)
+                        //var debug = Shadowverse.Instance.LocateOffsetWithSelectedCardName("Halo Golem");
+                        //Debugger.Break();
+
+                        if (Shadowverse.Instance.IsCardSelected)
                         {
+                            var card = Shadowverse.Instance.SelectedCard;
+                            
                             var sprite = new D3D.Sprite(_device);
                             sprite.Begin(D3D.SpriteFlags.AlphaBlend);
-                            var texture = GetTexture(ShadowverseProcessReader.SelectedCard.Replace(" ", "_"));
+                            var texture = GetTexture(card.Replace(" ", "_"));
 
                             if (texture != null)
                             {
@@ -164,8 +178,7 @@ namespace ShadowverseArtOverlay
                             }
 
                             //Check for evolved
-                            var evolvedTexture =
-                                GetEvolvedTexture(ShadowverseProcessReader.SelectedCard.Replace(" ", "_"));
+                            var evolvedTexture = GetEvolvedTexture(card.Replace(" ", "_"));
                             if (evolvedTexture != null)
                             {
                                 var evolvedSprite = new D3D.Sprite(_device);

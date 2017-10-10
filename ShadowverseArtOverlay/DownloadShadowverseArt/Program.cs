@@ -12,7 +12,7 @@ namespace DownloadShadowverseArt
         static void Main(string[] args)
         {
             var language = ConfigurationSettings.AppSettings["language"] ?? "en";
-            var totalCardsString = ConfigurationSettings.AppSettings["totalCards"] ?? "680";
+            var totalCardsString = ConfigurationSettings.AppSettings["totalCards"] ?? "1019";
 
 
             string url = $"https://shadowverse-portal.com/cards?m=index&lang={language}&m=index&include_token=1&card_offset=";
@@ -63,7 +63,7 @@ namespace DownloadShadowverseArt
                                 "Art/" + name.Replace(" ", "_") + "_Evolved.png");
 
                             var fileInfo = new FileInfo("Art/" + name.Replace(" ", "_") + "_Evolved.png");
-                            if (fileInfo.Length < 10000)
+                            if (fileInfo.Length < 100000)
                                 fileInfo.Delete();
                             else
                             {

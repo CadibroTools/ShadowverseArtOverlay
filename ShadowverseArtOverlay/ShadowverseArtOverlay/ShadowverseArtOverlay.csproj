@@ -62,16 +62,24 @@
       <DependentUpon>DxOverlay.cs</DependentUpon>
     </Compile>
     <Compile Include="Interops.cs" />
-    <Compile Include="Memory.cs" />
+    <Compile Include="Framework\Memory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoteMemoryObjects\DetailMgr.cs" />
+    <Compile Include="RemoteMemoryObjects\DetailPanelControl.cs" />
+    <Compile Include="RemoteMemoryObjects\FollowerPanel.cs" />
+    <Compile Include="RemoteMemoryObjects\NameLabel.cs" />
+    <Compile Include="Framework\RemoteMemoryObject.cs" />
+    <Compile Include="Framework\Shadowverse.cs" />
+    <Compile Include="RemoteMemoryObjects\FollowerEvoPanel.cs" />
+    <Compile Include="RemoteMemoryObjects\NonFollowerPanel.cs" />
+    <Compile Include="RemoteMemoryObjects\SingleBattleMgr.cs" />
     <Compile Include="Settings.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="ShadowverseProcessReader.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
