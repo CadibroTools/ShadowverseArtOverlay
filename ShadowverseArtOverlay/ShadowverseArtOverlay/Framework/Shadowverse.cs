@@ -14,6 +14,9 @@ namespace ShadowverseArtOverlay.Framework
             {
                 var proc = FindShadowverseProcess();
 
+                if (proc == null)
+                    return null;
+
                 if (_instance == null || _instanceId != proc.Id)
                 {
                     var mem = new Memory(proc.Id);

@@ -9,7 +9,25 @@ namespace ShadowverseArtOverlay
     public class Memory : IDisposable
     {
         public readonly int BaseAddress;
-        public readonly int MonoBaseAddress;
+        private int _monoBaseAddress;
+        public int MonoBaseAddress
+        {
+            get
+            {
+                if (_monoBaseAddress == 0)
+                {
+                    for (int i = 0; i < Process.Modules.Count; i++)
+                    {
+                        if (Process.Modules[i].ModuleName == "mono.dll")
+                        {
+                            _monoBaseAddress = Process.Modules[i].BaseAddress.ToInt32();
+                        }
+                    }
+                }
+
+                return _monoBaseAddress;
+            }
+        }
         private bool _closed;
         private IntPtr _procHandle;
 
@@ -19,13 +37,6 @@ namespace ShadowverseArtOverlay
             {
                 Process = Process.GetProcessById(pId);
                 BaseAddress = Process.MainModule.BaseAddress.ToInt32();
-                for (int i = 0; i < Process.Modules.Count; i++)
-                {
-                    if (Process.Modules[i].ModuleName == "mono.dll")
-                    {
-                        MonoBaseAddress = Process.Modules[i].BaseAddress.ToInt32();
-                    }
-                }
                 Open();
             }
             catch (Win32Exception ex)
