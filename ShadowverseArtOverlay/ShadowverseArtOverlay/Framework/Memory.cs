@@ -16,6 +16,9 @@ namespace ShadowverseArtOverlay
             {
                 if (_monoBaseAddress == 0)
                 {
+                    //Force the process to refresh the cache to detect modules loaded during runtime
+                    Process?.Refresh();
+
                     for (int i = 0; i < Process.Modules.Count; i++)
                     {
                         if (Process.Modules[i].ModuleName == "mono.dll")
